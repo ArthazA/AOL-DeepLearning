@@ -1,2 +1,8 @@
-FNVdataset/
+data/
+FNVdataset.zip
+__pycache__/
 *.pt
+runs/
+.env
+.DS_Store
+.streamlit/
