@@ -17,8 +17,8 @@ st.write(
     "The app detects each item and estimates the total nutritional value."
 )
 
-ROOT = Path(__file__).resolve().parents[1]
-MODEL_PATH = ROOT / "models" / "best.pt"
+ROOT = Path.cwd().parent
+MODEL_PATH = ROOT / "runs" / "yolov11_fnv_correct_p1" / "weights" / "best.pt"
 NUTRITION_100G_PATH = ROOT / "nutrition" / "nutrition_per_100g.json"
 AVG_WEIGHTS_PATH = ROOT / "nutrition" / "avg_weights.json"
 
@@ -38,6 +38,11 @@ def load_nutrition_data():
 model = load_model()
 nutrition_100g, avg_weights = load_nutrition_data()
 
+st.subheader("DEBUG — YOLO class names")
+st.write(model.names)
+st.stop()
+
+
 def get_color(conf):
     if conf >= 0.8:
         return (0, 255, 0)
@@ -51,10 +56,11 @@ def run_detection(image, conf_thresh=0.4):
     detections = []
 
     for box in results.boxes:
-        cls_id = int(box.cls)
+        cls_id = int(box.cls.item())
         detections.append({
+            "class_id": cls_id,
             "class_name": results.names[cls_id],
-            "confidence": float(box.conf),
+            "confidence": float(box.conf.item()),
             "bbox": box.xyxy.cpu().numpy().astype(int)[0]
         })
 
@@ -104,7 +110,8 @@ def compute_nutrition(counts):
         carbs = per100["carbs"] * factor
         protein = per100["protein"] * factor
         fat = per100["fat"] * factor
-        fiber = per100["fiber"] * factor
+        # fiber = per100["fiber"] * factor
+        fiber = per100.get("fiber", 0) * factor
 
         rows.append({
             "Item": item,
@@ -148,32 +155,42 @@ if uploaded_file is not None:
     counts = count_items(detections, conf_threshold)
     annotated_img = draw_boxes(image_rgb, detections)
 
+    # st.subheader("🔍 DEBUG: Raw detections")
+    # st.write(detections)
+    # st.write(counts)
+    # st.stop()
+    # st.write("DEBUG — counts dictionary:", counts) # why class name not show plz PLZLPLPZ
+    
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("📸 Detected Items")
+        st.subheader("Detected Items")
         st.image(annotated_img, use_container_width=True)
 
     with col2:
-        st.subheader("🧮 Item Counts")
+        st.subheader("Item Counts")
         if counts:
-            st.dataframe(
-                pd.DataFrame.from_dict(counts, orient="index", columns=["Count"])
+            counts_df = (
+            pd.DataFrame.from_dict(counts, orient="index", columns=["Count"])
+                .reset_index()
+                .rename(columns={"index": "Item"})
             )
+            st.dataframe(counts_df)
+
         else:
             st.info("No items detected above the confidence threshold.")
 
     if counts:
         nutrition_df, totals = compute_nutrition(counts)
 
-        st.subheader("🥗 Nutritional Breakdown")
+        st.subheader("Nutritional Breakdown")
         st.dataframe(nutrition_df)
 
-        st.subheader("🔥 Total Estimated Nutrition")
-        c1, c2, c3, c4 = st.columns(4)
+        st.subheader("Total Estimated Nutrition")
+        c1, c2, c3, c4, c5 = st.columns(5)
 
         c1.metric("Calories", f"{totals['Calories']:.1f} kcal")
         c2.metric("Carbs", f"{totals['Carbs (g)']:.1f} g")
         c3.metric("Protein", f"{totals['Protein (g)']:.1f} g")
         c4.metric("Fat", f"{totals['Fat (g)']:.1f} g")
-        c4.metric("Fiber", f"{totals['Fiber (g)']:.1f} g")
+        c5.metric("Fiber", f"{totals['Fiber (g)']:.1f} g")

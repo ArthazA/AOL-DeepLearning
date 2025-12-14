@@ -1,290 +1,289 @@
 {
-    "Apple": {
-      "Calories_kcal": 52,
-      "Carbs_g": 13.8,
-      "Protein_g": 0.3,
-      "Fat_g": 0.2,
-      "Fiber_g": 2.4
-    },
-    "Apricot": {
-      "Calories_kcal": 48,
-      "Carbs_g": 11.1,
-      "Protein_g": 1.4,
-      "Fat_g": 0.4,
-      "Fiber_g": 2.0
-    },
-    "Avocado": {
-      "Calories_kcal": 160,
-      "Carbs_g": 8.5,
-      "Protein_g": 2.0,
-      "Fat_g": 14.7,
-      "Fiber_g": 6.7
-    },
-    "Banana": {
-      "Calories_kcal": 89,
-      "Carbs_g": 22.8,
-      "Protein_g": 1.1,
-      "Fat_g": 0.3,
-      "Fiber_g": 2.6
-    },
-    "Beet": {
-      "Calories_kcal": 43,
-      "Carbs_g": 9.6,
-      "Protein_g": 1.6,
-      "Fat_g": 0.2,
-      "Fiber_g": 2.8
-    },
-    "Bell_pepper": {
-      "Calories_kcal": 20,
-      "Carbs_g": 4.6,
-      "Protein_g": 0.9,
-      "Fat_g": 0.2,
-      "Fiber_g": 1.7
-    },
-    "Bitter_Gourd": {
-      "Calories_kcal": 17,
-      "Carbs_g": 3.7,
-      "Protein_g": 1.0,
-      "Fat_g": 0.2,
-      "Fiber_g": 2.8
-    },
-    "Broccoli": {
-      "Calories_kcal": 34,
-      "Carbs_g": 6.6,
-      "Protein_g": 2.8,
-      "Fat_g": 0.4,
-      "Fiber_g": 2.6
-    },
-    "Cabbage": {
-      "Calories_kcal": 25,
-      "Carbs_g": 5.8,
-      "Protein_g": 1.3,
-      "Fat_g": 0.1,
-      "Fiber_g": 2.5
-    },
-    "Carrot": {
-      "Calories_kcal": 41,
-      "Carbs_g": 9.6,
-      "Protein_g": 0.9,
-      "Fat_g": 0.2,
-      "Fiber_g": 2.8
-    },
-    "Cauliflower": {
-      "Calories_kcal": 25,
-      "Carbs_g": 5.0,
-      "Protein_g": 1.9,
-      "Fat_g": 0.3,
-      "Fiber_g": 2.0
-    },
-    "Corn": {
-      "Calories_kcal": 86,
-      "Carbs_g": 18.7,
-      "Protein_g": 3.3,
-      "Fat_g": 1.2,
-      "Fiber_g": 2.0
-    },
-    "Cucumber": {
-      "Calories_kcal": 15,
-      "Carbs_g": 3.6,
-      "Protein_g": 0.7,
-      "Fat_g": 0.1,
-      "Fiber_g": 1.5
-    },
-    "Custard_apple": {
-      "Calories_kcal": 101,
-      "Carbs_g": 25.2,
-      "Protein_g": 1.7,
-      "Fat_g": 0.6,
-      "Fiber_g": 2.4
-    },
-    "Durian": {
-      "Calories_kcal": 147,
-      "Carbs_g": 27.1,
-      "Protein_g": 1.5,
-      "Fat_g": 5.3,
-      "Fiber_g": 3.8
-    },
-    "Eggplant": {
-      "Calories_kcal": 25,
-      "Carbs_g": 5.9,
-      "Protein_g": 1.0,
-      "Fat_g": 0.2,
-      "Fiber_g": 3.0
-    },
-    "Fig": {
-      "Calories_kcal": 74,
-      "Carbs_g": 19.2,
-      "Protein_g": 0.7,
-      "Fat_g": 0.3,
-      "Fiber_g": 2.9
-    },
-    "Garlic": {
-      "Calories_kcal": 149,
-      "Carbs_g": 33.1,
-      "Protein_g": 6.4,
-      "Fat_g": 0.5,
-      "Fiber_g": 2.1
-    },
-    "Grape": {
-      "Calories_kcal": 69,
-      "Carbs_g": 18.1,
-      "Protein_g": 0.6,
-      "Fat_g": 0.2,
-      "Fiber_g": 0.9
-    },
-    "Hot_pepper": {
-      "Calories_kcal": 40,
-      "Carbs_g": 8.8,
-      "Protein_g": 1.9,
-      "Fat_g": 0.4,
-      "Fiber_g": 1.5
-    },
-    "Kiwi": {
-      "Calories_kcal": 61,
-      "Carbs_g": 14.7,
-      "Protein_g": 1.1,
-      "Fat_g": 0.5,
-      "Fiber_g": 3.0
-    },
-    "Lemon": {
-      "Calories_kcal": 29,
-      "Carbs_g": 9.3,
-      "Protein_g": 1.1,
-      "Fat_g": 0.3,
-      "Fiber_g": 2.8
-    },
-    "Mango": {
-      "Calories_kcal": 60,
-      "Carbs_g": 15.0,
-      "Protein_g": 0.8,
-      "Fat_g": 0.4,
-      "Fiber_g": 1.6
-    },
-    "Melon": {
-      "Calories_kcal": 34,
-      "Carbs_g": 8.2,
-      "Protein_g": 0.8,
-      "Fat_g": 0.2,
-      "Fiber_g": 0.9
-    },
-    "Onion": {
-      "Calories_kcal": 40,
-      "Carbs_g": 9.3,
-      "Protein_g": 1.1,
-      "Fat_g": 0.1,
-      "Fiber_g": 1.7
-    },
-    "Orange": {
-      "Calories_kcal": 47,
-      "Carbs_g": 11.8,
-      "Protein_g": 0.9,
-      "Fat_g": 0.1,
-      "Fiber_g": 2.4
-    },
-    "Papaya": {
-      "Calories_kcal": 43,
-      "Carbs_g": 10.8,
-      "Protein_g": 0.5,
-      "Fat_g": 0.3,
-      "Fiber_g": 1.7
-    },
-    "Peach": {
-      "Calories_kcal": 39,
-      "Carbs_g": 9.5,
-      "Protein_g": 0.9,
-      "Fat_g": 0.3,
-      "Fiber_g": 1.5
-    },
-    "Pear": {
-      "Calories_kcal": 57,
-      "Carbs_g": 15.2,
-      "Protein_g": 0.4,
-      "Fat_g": 0.1,
-      "Fiber_g": 3.1
-    },
-    "Persimmon": {
-      "Calories_kcal": 70,
-      "Carbs_g": 18.6,
-      "Protein_g": 0.6,
-      "Fat_g": 0.3,
-      "Fiber_g": 3.6
-    },
-    "Pineapple": {
-      "Calories_kcal": 50,
-      "Carbs_g": 13.1,
-      "Protein_g": 0.5,
-      "Fat_g": 0.1,
-      "Fiber_g": 1.4
-    },
-    "Plum": {
-      "Calories_kcal": 46,
-      "Carbs_g": 11.4,
-      "Protein_g": 0.7,
-      "Fat_g": 0.3,
-      "Fiber_g": 1.1
-    },
-    "Pomegranate": {
-      "Calories_kcal": 83,
-      "Carbs_g": 18.7,
-      "Protein_g": 1.7,
-      "Fat_g": 1.2,
-      "Fiber_g": 4.0
-    },
-    "Potato": {
-      "Calories_kcal": 77,
-      "Carbs_g": 17.5,
-      "Protein_g": 2.0,
-      "Fat_g": 0.1,
-      "Fiber_g": 2.2
-    },
-    "Pumpkin": {
-      "Calories_kcal": 26,
-      "Carbs_g": 6.5,
-      "Protein_g": 1.0,
-      "Fat_g": 0.1,
-      "Fiber_g": 0.5
-    },
-    "Radish": {
-      "Calories_kcal": 16,
-      "Carbs_g": 3.4,
-      "Protein_g": 0.7,
-      "Fat_g": 0.1,
-      "Fiber_g": 1.6
-    },
-    "Strawberry": {
-      "Calories_kcal": 32,
-      "Carbs_g": 7.7,
-      "Protein_g": 0.7,
-      "Fat_g": 0.3,
-      "Fiber_g": 2.0
-    },
-    "Tomato": {
-      "Calories_kcal": 18,
-      "Carbs_g": 3.9,
-      "Protein_g": 0.9,
-      "Fat_g": 0.2,
-      "Fiber_g": 1.2
-    },
-    "Turnip": {
-      "Calories_kcal": 28,
-      "Carbs_g": 6.4,
-      "Protein_g": 0.9,
-      "Fat_g": 0.1,
-      "Fiber_g": 1.8
-    },
-    "Watermelon": {
-      "Calories_kcal": 30,
-      "Carbs_g": 7.6,
-      "Protein_g": 0.6,
-      "Fat_g": 0.2,
-      "Fiber_g": 0.4
-    },
-    "Zucchini": {
-      "Calories_kcal": 17,
-      "Carbs_g": 3.1,
-      "Protein_g": 1.2,
-      "Fat_g": 0.3,
-      "Fiber_g": 1.0
-    }
+  "apple": {
+    "calories": 52,
+    "carbs": 13.8,
+    "protein": 0.3,
+    "fat": 0.2,
+    "fiber": 2.4
+  },
+  "apricot": {
+    "calories": 48,
+    "carbs": 11.1,
+    "protein": 1.4,
+    "fat": 0.4,
+    "fiber": 2.0
+  },
+  "avocado": {
+    "calories": 160,
+    "carbs": 8.5,
+    "protein": 2.0,
+    "fat": 14.7,
+    "fiber": 6.7
+  },
+  "banana": {
+    "calories": 89,
+    "carbs": 22.8,
+    "protein": 1.1,
+    "fat": 0.3,
+    "fiber": 2.6
+  },
+  "beet": {
+    "calories": 43,
+    "carbs": 9.6,
+    "protein": 1.6,
+    "fat": 0.2,
+    "fiber": 2.8
+  },
+  "bell_pepper": {
+    "calories": 20,
+    "carbs": 4.6,
+    "protein": 0.9,
+    "fat": 0.2,
+    "fiber": 1.7
+  },
+  "bitter_gourd": {
+    "calories": 17,
+    "carbs": 3.7,
+    "protein": 1.0,
+    "fat": 0.2,
+    "fiber": 2.8
+  },
+  "broccoli": {
+    "calories": 34,
+    "carbs": 6.6,
+    "protein": 2.8,
+    "fat": 0.4,
+    "fiber": 2.6
+  },
+  "cabbage": {
+    "calories": 25,
+    "carbs": 5.8,
+    "protein": 1.3,
+    "fat": 0.1,
+    "fiber": 2.5
+  },
+  "carrot": {
+    "calories": 41,
+    "carbs": 9.6,
+    "protein": 0.9,
+    "fat": 0.2,
+    "fiber": 2.8
+  },
+  "cauliflower": {
+    "calories": 25,
+    "carbs": 5.0,
+    "protein": 1.9,
+    "fat": 0.3,
+    "fiber": 2.0
+  },
+  "corn": {
+    "calories": 86,
+    "carbs": 18.7,
+    "protein": 3.3,
+    "fat": 1.2,
+    "fiber": 2.0
+  },
+  "cucumber": {
+    "calories": 15,
+    "carbs": 3.6,
+    "protein": 0.7,
+    "fat": 0.1,
+    "fiber": 1.5
+  },
+  "custard_apple": {
+    "calories": 101,
+    "carbs": 25.2,
+    "protein": 1.7,
+    "fat": 0.6,
+    "fiber": 2.4
+  },
+  "durian": {
+    "calories": 147,
+    "carbs": 27.1,
+    "protein": 1.5,
+    "fat": 5.3,
+    "fiber": 3.8
+  },
+  "eggplant": {
+    "calories": 25,
+    "carbs": 5.9,
+    "protein": 1.0,
+    "fat": 0.2,
+    "fiber": 3.0
+  },
+  "fig": {
+    "calories": 74,
+    "carbs": 19.2,
+    "protein": 0.7,
+    "fat": 0.3,
+    "fiber": 2.9
+  },
+  "garlic": {
+    "calories": 149,
+    "carbs": 33.1,
+    "protein": 6.4,
+    "fat": 0.5,
+    "fiber": 2.1
+  },
+  "grape": {
+    "calories": 69,
+    "carbs": 18.1,
+    "protein": 0.6,
+    "fat": 0.2,
+    "fiber": 0.9
+  },
+  "hot_pepper": {
+    "calories": 40,
+    "carbs": 8.8,
+    "protein": 1.9,
+    "fat": 0.4,
+    "fiber": 1.5
+  },
+  "kiwi": {
+    "calories": 61,
+    "carbs": 14.7,
+    "protein": 1.1,
+    "fat": 0.5,
+    "fiber": 3.0
+  },
+  "lemon": {
+    "calories": 29,
+    "carbs": 9.3,
+    "protein": 1.1,
+    "fat": 0.3,
+    "fiber": 2.8
+  },
+  "mango": {
+    "calories": 60,
+    "carbs": 15.0,
+    "protein": 0.8,
+    "fat": 0.4,
+    "fiber": 1.6
+  },
+  "melon": {
+    "calories": 34,
+    "carbs": 8.2,
+    "protein": 0.8,
+    "fat": 0.2,
+    "fiber": 0.9
+  },
+  "onion": {
+    "calories": 40,
+    "carbs": 9.3,
+    "protein": 1.1,
+    "fat": 0.1,
+    "fiber": 1.7
+  },
+  "orange": {
+    "calories": 47,
+    "carbs": 11.8,
+    "protein": 0.9,
+    "fat": 0.1,
+    "fiber": 2.4
+  },
+  "papaya": {
+    "calories": 43,
+    "carbs": 10.8,
+    "protein": 0.5,
+    "fat": 0.3,
+    "fiber": 1.7
+  },
+  "peach": {
+    "calories": 39,
+    "carbs": 9.5,
+    "protein": 0.9,
+    "fat": 0.3,
+    "fiber": 1.5
+  },
+  "pear": {
+    "calories": 57,
+    "carbs": 15.2,
+    "protein": 0.4,
+    "fat": 0.1,
+    "fiber": 3.1
+  },
+  "persimmon": {
+    "calories": 70,
+    "carbs": 18.6,
+    "protein": 0.6,
+    "fat": 0.3,
+    "fiber": 3.6
+  },
+  "pineapple": {
+    "calories": 50,
+    "carbs": 13.1,
+    "protein": 0.5,
+    "fat": 0.1,
+    "fiber": 1.4
+  },
+  "plum": {
+    "calories": 46,
+    "carbs": 11.4,
+    "protein": 0.7,
+    "fat": 0.3,
+    "fiber": 1.1
+  },
+  "pomegranate": {
+    "calories": 83,
+    "carbs": 18.7,
+    "protein": 1.7,
+    "fat": 1.2,
+    "fiber": 4.0
+  },
+  "potato": {
+    "calories": 77,
+    "carbs": 17.5,
+    "protein": 2.0,
+    "fat": 0.1,
+    "fiber": 2.2
+  },
+  "pumpkin": {
+    "calories": 26,
+    "carbs": 6.5,
+    "protein": 1.0,
+    "fat": 0.1,
+    "fiber": 0.5
+  },
+  "radish": {
+    "calories": 16,
+    "carbs": 3.4,
+    "protein": 0.7,
+    "fat": 0.1,
+    "fiber": 1.6
+  },
+  "strawberry": {
+    "calories": 32,
+    "carbs": 7.7,
+    "protein": 0.7,
+    "fat": 0.3,
+    "fiber": 2.0
+  },
+  "tomato": {
+    "calories": 18,
+    "carbs": 3.9,
+    "protein": 0.9,
+    "fat": 0.2,
+    "fiber": 1.2
+  },
+  "turnip": {
+    "calories": 28,
+    "carbs": 6.4,
+    "protein": 0.9,
+    "fat": 0.1,
+    "fiber": 1.8
+  },
+  "watermelon": {
+    "calories": 30,
+    "carbs": 7.6,
+    "protein": 0.6,
+    "fat": 0.2,
+    "fiber": 0.4
+  },
+  "zucchini": {
+    "calories": 17,
+    "carbs": 3.1,
+    "protein": 1.2,
+    "fat": 0.3,
+    "fiber": 1.0
   }
 }

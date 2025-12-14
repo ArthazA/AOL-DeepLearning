@@ -6,44 +6,47 @@ Roboflow Link: https://universe.roboflow.com/fvd-v4-with-split/fruits-and-vegeta
 The goal of this project is to demonstrate dataset preparation, model training, evaluation, inference using Ultralytics YOLO, along with Streamlit deployment to calculate the estimated total nutritional value of the submitted image of Fruits and Vegetables.
 
 All available classes (fruits & vegetables) are as such:
-- Apricot 0
-- Apple 1
-- Avocado 2
-- Banana 3
-- Beetroot 4
-- Bell pepper 5
-- Bitter Gourd 6
-- Broccoli 7
-- Cabbage 8
-- Carrot 9
-- Cauliflower 10
-- Corn 11
-- Cucumber 12
-- Custard apple 13
-- Durian 14
-- Eggplant 15
-- Fig 16
-- Garlic 17
-- Grape 18
-- Hot pepper 19
-- Kiwi 20
-- Lemon 21
-- Mango 22
-- Melon 23
-- Onion 24
-- Orange 25
-- Papaya 26
-- Peach 27
-- Pear 28
-- Persimmon 29
-- Pineapple 30
-- Plum 31
-- Pomegranate 32
-- Potato 33
-- Pumpkin 34
-- Radish 35
-- Strawberry 36
-- Tomato 37
-- Turnip 38
-- Watermelon 39
-- Zucchini 40
+names:
+  0: apricot
+  1: apple
+  2: avocado
+  3: banana
+  4: beetroot
+  5: bell_pepper
+  6: bitter_gourd
+  7: broccoli
+  8: cabbage
+  9: carrot
+  10: cauliflower
+  11: corn
+  12: cucumber
+  13: custard_apple
+  14: durian
+  15: eggplant
+  16: fig
+  17: garlic
+  18: grape
+  19: hot_pepper
+  20: kiwi
+  21: lemon
+  22: mango
+  23: melon
+  24: onion
+  25: orange
+  26: papaya
+  27: peach
+  28: pear
+  29: persimmon
+  30: pineapple
+  31: plum
+  32: pomegranate
+  33: potato
+  34: pumpkin
+  35: radish
+  36: strawberry
+  37: tomato
+  38: turnip
+  39: watermelon
+  40: zucchini
+
+*these are obtained and altered from the `data.yaml` file and rewritten anew into the same file
