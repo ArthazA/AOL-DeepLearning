@@ -6,3 +6,5 @@ pillow
 torch
 torchvision
 ipykernel
+streamlit
+pandas
