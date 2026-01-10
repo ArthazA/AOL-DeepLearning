@@ -18,9 +18,16 @@ st.write(
 )
 
 ROOT = Path.cwd().parent
-MODEL_PATH = ROOT / "runs" / "yolov11_fnv_correct_p1" / "weights" / "best.pt"
+MODEL_PATH = ROOT / "runs" / "yolov11_fnv_correct_p1" / "weights" / "best.pt" # change "yolov11_fnv_correct_p1" to your file name
 NUTRITION_100G_PATH = ROOT / "nutrition" / "nutrition_per_100g.json"
 AVG_WEIGHTS_PATH = ROOT / "nutrition" / "avg_weights.json"
+
+@st.cache_data
+def load_class_map():
+    with open(ROOT / "nutrition" / "class_id_map.json") as f:
+        return json.load(f)
+
+CLASS_ID_MAP = load_class_map()
 
 @st.cache_resource
 def load_model():
@@ -38,11 +45,6 @@ def load_nutrition_data():
 model = load_model()
 nutrition_100g, avg_weights = load_nutrition_data()
 
-st.subheader("DEBUG — YOLO class names")
-st.write(model.names)
-st.stop()
-
-
 def get_color(conf):
     if conf >= 0.8:
         return (0, 255, 0)
@@ -56,11 +58,11 @@ def run_detection(image, conf_thresh=0.4):
     detections = []
 
     for box in results.boxes:
-        cls_id = int(box.cls.item())
+        cls_id = int(box.cls)
         detections.append({
             "class_id": cls_id,
-            "class_name": results.names[cls_id],
-            "confidence": float(box.conf.item()),
+            "class_name": CLASS_ID_MAP[str(cls_id)],
+            "confidence": float(box.conf),
             "bbox": box.xyxy.cpu().numpy().astype(int)[0]
         })
 
@@ -155,12 +157,6 @@ if uploaded_file is not None:
     counts = count_items(detections, conf_threshold)
     annotated_img = draw_boxes(image_rgb, detections)
 
-    # st.subheader("🔍 DEBUG: Raw detections")
-    # st.write(detections)
-    # st.write(counts)
-    # st.stop()
-    # st.write("DEBUG — counts dictionary:", counts) # why class name not show plz PLZLPLPZ
-    
     col1, col2 = st.columns(2)
 
     with col1:
