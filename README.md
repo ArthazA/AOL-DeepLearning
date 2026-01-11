@@ -1,7 +1,7 @@
 This project trains a YOLOv8 object detection model to detect and classify fruits and vegetables.
 The model was trained on roboflow dataset and evaluated using standard object detection metrics.
 
-Roboflow Link: https://universe.roboflow.com/fvd-v4-with-split/fruits-and-vegetables-pufaj/dataset/3 VERSION 3
+Roboflow Link: https://universe.roboflow.com/fvd-v4-with-split/fruits-and-vegetables-pufaj/dataset/2 VERSION 2 (Version 3 is classless, used for detection instead of classification)
 
 The goal of this project is to demonstrate dataset preparation, model training, evaluation, inference using Ultralytics YOLO, along with Streamlit deployment to calculate the estimated total nutritional value of the submitted image of Fruits and Vegetables.
 
