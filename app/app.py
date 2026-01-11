@@ -18,7 +18,7 @@ st.write(
 )
 
 ROOT = Path.cwd().parent
-MODEL_PATH = ROOT / "runs" / "yolov11_fnv_correct_p1" / "weights" / "best.pt" # change "yolov11_fnv_correct_p1" to your file name
+MODEL_PATH = ROOT / "runs" / "yolov8s_fnv_correct_p3" / "weights" / "best.pt" # change "yolov8s_fnv_correct_p3" to your file name
 NUTRITION_100G_PATH = ROOT / "nutrition" / "nutrition_per_100g.json"
 AVG_WEIGHTS_PATH = ROOT / "nutrition" / "avg_weights.json"
 
